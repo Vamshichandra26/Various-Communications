@@ -1,15 +1,18 @@
 # Various-Communications
 
+RTMP /RTSP/ HLS/ MPEG - DASH/ SRT/ Websockets/ IRC/ XMPP/ MQTT/ AMQP/ RCS/ STOMP
+
 # Difference Between Signaling Protocols and Transport Protocols?
 **Signaling Protocols**-
-A Signaling Protocol is used to identify the state of connection between telephones or VOIP terminals. Signaling protocols include: ALOHA, EDSS1, Dual-tone multi-frequency signaling, H.248, H.323, H.225.0, Jingle, Media Gateway Control Protocol, Megaco, R1, NBAP (Node B Application Part), R2 signalling, Session Initiation Protocol (see SIP), Signaling System No.5, Signaling System No.6, Signaling System No.7 (see SS7), SCCP (Skinny Call Control Protocol), Q.931 and QSIG.
+A Signaling Protocol is used to identify the state of connection between telephones or VOIP terminals. Signaling protocols include: ALOHA, EDSS1, Dual-tone multi-frequency signaling, H.248, H.323, H.225.0, Jingle, Media Gateway Control Protocol, Megaco, R1, NBAP (Node B Application Part), R2 signalling, **Session Initiation Protocol (SIP)**, Signaling System No.5, Signaling System No.6, Signaling System No.7 (SS7), SCCP (Skinny Call Control Protocol), Q.931 and QSIG.
 
 **Transport Protocols**
-
+TCP/ UDP
 
 
 **Network Protocols**
-
+HTML / Websockets
+XHR , SSE
 
 
 
@@ -43,5 +46,6 @@ VoIP has two Flavors of Protocol
 VoIP Support: POE, TFTP, DHCP, DNS, NTP
 
 # WebRTC
-
+Inorder to know about WbeRTC, we need to have an idea about Websockets.
+Though Info is transfered between browsers, inorder to intiate connection the browser should approach Server.
 
