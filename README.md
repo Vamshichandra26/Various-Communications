@@ -14,7 +14,7 @@ TCP/ UDP
 HTML / Websockets
 XHR , SSE
 
-# Client Server Architecture (vs) Peer - Peer Connection
+# Client Server Architecture (vs) Peer2Peer Architecture
 THough we have n-number of architectural patterns where an application can be built, i would like to throw some light on the two most common patterns which are common the world of internet.
 1. Client Server Architecture
 2. Peer 2 Peer
