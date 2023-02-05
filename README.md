@@ -14,8 +14,14 @@ TCP/ UDP
 HTML / Websockets
 XHR , SSE
 
+# Client Server Architecture (vs) Peer - Peer Connection
+THough we have n-number of architectural patterns where an application can be built, i would like to throw some light on the two most common patterns which are common the world of internet.
+1. Client Server Architecture
+2. Peer 2 Peer
 
+In the **Client Server architecture**, there is request response cycle between Client and the server.There is request which goes from client to the server and theres is response which is being generated from the server which is sent to the client, all these things are done through the HTTP Requests.It is like one way traffic between the client and the server.In order to mitigate this XHR and SSE came into picture so that there is a two way communication between Client and server, but it was more like a hack and latency which was produced. Then Came into the Picture the Websockets, where it provide a Bidirectional terminal between the Client and the Server. The Messages can flow from both the ways(From client to server and vice versa).
 
+In **Peer to Peer Architecture**, things are little bit different here.There is no involvement if server here, the data is transfered between the Browsers only, which inturn decreases the Latency. In Terms of the Video Conferencing Platform, WebRTC is the Newest implementation where the browser deals with the server in order to establish connection only, later the data(VIdeo, audio, Etc) is between the Browsers itself.
 
 
 # VOIP
