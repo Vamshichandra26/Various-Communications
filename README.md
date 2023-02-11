@@ -12,11 +12,10 @@ TCP/ UDP
 
 **Network Protocols**
 HTML / Websockets
-XHR , SSE
+XHR , SSE, Ajax Long Pooling, Comet
 
 # Client Server Architecture (vs) Peer2Peer Architecture
-https://youtu.be/BrT3AO8bVQY
-THough we have n-number of architectural patterns where an application can be built, i would like to throw some light on the two most common patterns which are common the world of internet.
+Though we have n-number of architectural patterns where an application can be built, i would like to throw some light on the two most common patterns which are common the world of internet.
 1. Client Server Architecture
 2. Peer 2 Peer
 
@@ -59,4 +58,13 @@ Though Info is transfered between browsers, inorder to intiate connection the br
 Websockets are the implementation of client server architecture, where there is request is been sent from client to the server.
 Generally in this architecture there is a request from client to the server and server responds, there is no two way communication so the client needs to constantly ping the server for any update which increases the latency.So websockets open bidirectional tunnel between client and the server so even the server can respond whenever there is a change in the system.In the Context of video conferencing this method also has some latency because the client is not directly in contact with the client.His data is routed through the server.In order to mitigate this WebRTC came into picture.
 In WebRTC the architecture used is Peer 2 Peer where the clients only reach out to server for signaling purpose(To intiate the request between the browsers) , later the client interacts directly with the client so there is no server involvement which inturn decreases the latency.
+
+In Order to understand the WebRTC, there are few set of Topics which needs to be read upon
+1. NAT
+2. STUN, TURN
+3. ICE
+4. SDP
+5. Signaling the SDP via Websockets
+
+
 
